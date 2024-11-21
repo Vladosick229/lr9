@@ -1,6 +1,8 @@
-def isCollisionRect():
-    first=[(-3.4, 1),(9.2, 10)]
-    second=[(-7.4, 0),(13.2, 12)]
+class RectCorrectError():
+   
+ def isCollisionRect():
+    first=[(1, 1),(2, 2)]
+    second=[(3, 17),(13, 1)]
     x1_first=first[0][0]
     x2_first=first[1][0]
     x1_second=second[0][0]
@@ -10,11 +12,11 @@ def isCollisionRect():
     y1_second=second[0][1]
     y2_second=second[1][1]
     if((y2_first<y1_second)or(y2_second<y1_first)):
-        raise ValueError('1й прямоугольник некоректный')
+        raise RectCorrectError('1й прямоугольник некоректный')
     elif((x2_first<x1_second) or(x2_second<x1_first)):
         print("False")
     else:
         print("True")
 
 
-isCollisionRect()
+ isCollisionRect()

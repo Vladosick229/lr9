@@ -20,7 +20,7 @@ class RectCorrectError():
      width=right-left
      height=top-bottom
      if(width < -10 or height < -10):
-         raise RectCorrectError("ширина или длина хуевые")
+         raise RectCorrectError("ширина или длина плохие")
      elif (width <= 0 or height <= 0):
          print(0)
      else:
